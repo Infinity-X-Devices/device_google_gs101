@@ -8,6 +8,9 @@
 include build/make/target/board/BoardConfigMainlineCommon.mk
 include build/make/target/board/BoardConfigPixelCommon.mk
 
+BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
@@ -136,7 +139,7 @@ BOARD_GOOGLE_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 BOARD_SUPER_PARTITION_ERROR_LIMIT := 8111783936
 
 # Reserve space for gapps install
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/infinity/config/BoardConfigReservedSize.mk
 
 # Device Tree
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true

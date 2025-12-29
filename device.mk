@@ -167,7 +167,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += ro.surface_flinger.prime_shader_cache.ultrahdr=1
 
 DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay
-DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay-infinity
 
 # Enforce the Product interface
 PRODUCT_PRODUCT_VNDK_VERSION := current
